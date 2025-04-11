@@ -15,7 +15,8 @@ export const Projects = () => {
     const projects = [
             {
                 title: "Kasa",
-                description: "REACT JS",
+                description: "Projet from scratch where I have to develop the entire application, React components, React Router routes, following Figma mockups",
+                languages: "REACT JS",
                 imgUrl: projImgKasa,
                 path: "kasa"
             },

@@ -17,7 +17,7 @@ export const ProjectCard = ({title, description, imgUrl, path}) => {
                     <a 
                         href={filePath}
                         target="_blank"
-                        rel="noopener noreferrer">Voir le Projet</a>
+                        rel="noopener noreferrer">See Project</a>
                 </div>
             </div>
         </Col>
