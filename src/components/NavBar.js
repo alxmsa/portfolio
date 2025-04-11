@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { Navbar, Nav, Container } from "react-bootstrap";
-import logo from '../assets/img/md_logo_name.png';
-import logo2 from '../assets/img/md_logo_circle.png';
+import logo from '../assets/img/md_logo_name.webp';
+import logo2 from '../assets/img/md_logo_circle.webp';
 import navIcon1 from '../assets/img/nav-icon1.svg';
 import navIcon2 from '../assets/img/nav-icon2.svg';
 import navIcon3 from '../assets/img/nav-icon3.svg';
@@ -55,11 +55,11 @@ export const NavBar = () => {
             <span className="navbar-text">
               <div className="social-icon">
                 <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/moussa-diop-7b2099167/"><img src={navIcon1} alt="linkedin" /></a>
-                <a target="_blank" rel="noreferrer" href="https://www.facebook.com/alxmsa.dp"><img src={navIcon2} alt="facebook" /></a>
+                <a target="_blank" rel="noreferrer" href="https://github.com/alxmsa"><img src={navIcon2} alt="facebook" /></a>
                 <a target="_blank" rel="noreferrer" href="https://www.instagram.com/mssa.dp/"><img src={navIcon3} alt="instagram" /></a>
               </div>
               {/* <HashLink to='#connect'> */}
-                <button className="vvd"><span>Let’s Connect</span></button>
+                <button className="vvd"><span>Resume ↓</span></button>
               {/* </HashLink> */}
             </span>
           </Navbar.Collapse>

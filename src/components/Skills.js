@@ -1,14 +1,14 @@
 import { Container, Col, Row } from "react-bootstrap";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
-import html from "../assets/img/html_logo.png";
-import css from "../assets/img/css3_logo.png";
-import javascript from "../assets/img/JavaScript_logo.png";
-import apirest from "../assets/img/api_rest_logo.webp";
-import reactjs from "../assets/img/reactjs_logo.png";
-import nodejs from "../assets/img/nodejs_logo.png";
-import mongodb from "../assets/img/mongodb_logo.png";
-import colorSharp from "../assets/img/color-sharp.png"
+import html from "../assets/img/html_logo.webp";
+import css from "../assets/img/css3_logo.webp";
+import javascript from "../assets/img/JavaScript_logo.webp";
+import apirest from "../assets/img/apiRestLogo.png";
+import reactjs from "../assets/img/reactjs_logo.webp";
+import nodejs from "../assets/img/nodejs_logo.webp";
+import mongodb from "../assets/img/mongodb_logo.webp";
+import colorSharp from "../assets/img/color-sharp.webp";
 
 export const Skills = () => {
     const responsive = {

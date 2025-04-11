@@ -489,6 +489,33 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   font-size: 15px;
   letter-spacing: 0.8px;
 }
+.proj-txtx a {
+  text-decoration: none;
+  color: #000;
+  background-color: #fff;
+  border-radius: 0;
+  padding: 10px 20px;
+  font-weight: 700;
+  transition: 0.3s ease-in-out;
+}
+.proj-txtx a:hover{
+  background-color: #000;
+  color: #fff;
+}
+.proj-txtx a::before {
+  content: "";
+  background: #121212;
+  width: 0;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  transition: 0.3s ease-in-out;
+}
+.proj-txtx:hover::before {
+  width: 100%;
+}
 .background-image-right {
   top: 20%;
   position: absolute;

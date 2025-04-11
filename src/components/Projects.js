@@ -1,47 +1,69 @@
 import { Container, Col, Row, Tab, Nav } from "react-bootstrap";
 import { ProjectCard } from './ProjectCard';
 import colorSharp2 from "../assets/img/color-sharp2.png";
-import projImg1 from '../assets/img/project-img1.png';
-import projImg2 from '../assets/img/hotel_chambord.png';
-import projImg3 from '../assets/img/boulangerie_diop.jpg';
+import projImgHotel from '../assets/img/hotel_chambord.webp';
+import projImgBoulangerie from '../assets/img/boulangerie_diop.webp';
+import projImgKasa from '../assets/img/kasa.webp';
+import projImgCoffee from '../assets/img/coffee.webp';
+import projImgSlider from '../assets/img/slider.webp';
+import projImgPortfolio from '../assets/img/portfolio.webp';
+import projImgGrimoire from '../assets/img/mon_vieux_grimoire.webp';
 import 'animate.css';
 import TrackVisibility from "react-on-screen";
 
 export const Projects = () => {
     const projects = [
             {
-                title: "Business Startup",
-                description: "Design & Development",
-                imgUrl: projImg1
+                title: "Kasa",
+                description: "REACT JS",
+                imgUrl: projImgKasa,
+                path: "kasa"
             },
             {
-                title: "HOTEL CHAMBORD",
+                title: "Portfolio",
                 description: "HTML / CSS / JS",
-                imgUrl: projImg2
+                imgUrl: projImgPortfolio,
+                path: "portfoliovf"
             },
             {
-                title: "Business Startup",
+                title: "Coffee Eshop",
+                description: "HTML / CSS / JS",
+                imgUrl: projImgCoffee,
+                path: "projet_coffeeShop"
+            },
+            {
+                title: "Hôtel Chambord",
+                description: "HTML / CSS / JS",
+                imgUrl: projImgHotel,
+                path: "hotelChambord"
+
+            },
+            {
+                title: "Projet Slider",
+                description: "HTML / CSS / JS",
+                imgUrl: projImgSlider,
+                path: "slider"
+            },
+            {
+                title: "Boulangerie Diop",
                 description: "HTML / CSS",
-                imgUrl: projImg3
-            },
-            {
-                title: "Business Startup",
-                description: "Design & Development",
-                imgUrl: projImg1
-            },
-            {
-                title: "Business Startup",
-                description: "Design & Development",
-                imgUrl: projImg2
-            },
-            {
-                title: "Business Startup",
-                description: "Design & Development",
-                imgUrl: projImg3
+                imgUrl: projImgBoulangerie,
+                path: "boulangerie"
             },
     ];
+    const backProject = [
+        {
+            title: "Mon vieux grimoire",
+            description: "NODE JS",
+            imgUrl: projImgGrimoire,
+        }
+    ];
+    const fullProject = [
+
+    ];
+
     return (
-        <section className="project" id="project">
+        <section className="project" id="projects">
             <Container>
                 <Row>
                     <Col>
@@ -61,7 +83,7 @@ export const Projects = () => {
                                     <Nav.Link eventKey="second">BACKEND</Nav.Link>
                                 </Nav.Item>
                                 <Nav.Item>
-                                    <Nav.Link eventKey="third" >OTHERS</Nav.Link>
+                                    <Nav.Link eventKey="third" >FULLSTACK</Nav.Link>
                                 </Nav.Item>
                             </Nav>
                             <Tab.Content>
@@ -82,7 +104,7 @@ export const Projects = () => {
                                 <Tab.Pane eventKey='second'>
                                 <Row>
                                         {
-                                            projects.map((project,index) => {
+                                            backProject.map((project,index) => {
                                                 return (
                                                 <ProjectCard
                                                  key={index}
@@ -96,7 +118,7 @@ export const Projects = () => {
                                 <Tab.Pane eventKey='third'>
                                 <Row>
                                         {
-                                            projects.map((project,index) => {
+                                            fullProject.map((project,index) => {
                                                 return (
                                                 <ProjectCard
                                                  key={index}
