@@ -22,32 +22,32 @@ export const Projects = () => {
             },
             {
                 title: "Portfolio",
-                description: "HTML / CSS / JS",
+                description: "Old portfolio, I did it from scratch using Html, Css and Javascript using youtube to help me",
                 imgUrl: projImgPortfolio,
                 path: "portfoliovf"
             },
             {
                 title: "Coffee Eshop",
-                description: "HTML / CSS / JS",
+                description: "I did this page using Html, Css and Javascript following a Youtube course video",
                 imgUrl: projImgCoffee,
                 path: "projet_coffeeShop"
             },
             {
                 title: "Hôtel Chambord",
-                description: "HTML / CSS / JS",
+                description: "This was one of my first project I have to do during my qualification at Ifocop, I used Html, css and Javascript",
                 imgUrl: projImgHotel,
                 path: "hotelChambord"
 
             },
             {
                 title: "Projet Slider",
-                description: "HTML / CSS / JS",
+                description: "I did this project following a Youtube course video to learn more about sliders",
                 imgUrl: projImgSlider,
                 path: "slider"
             },
             {
                 title: "Boulangerie Diop",
-                description: "HTML / CSS",
+                description: "I realize this project just after the Chambord project, I reproduced a restaurant website to train myself with flexbox. I adapted it into a bakery website using only Html and css",
                 imgUrl: projImgBoulangerie,
                 path: "boulangerie"
             },
@@ -55,12 +55,9 @@ export const Projects = () => {
     const backProject = [
         {
             title: "Mon vieux grimoire",
-            description: "NODE JS",
+            description: "I have to develop an Api to create features like the authentification, the creation of a new book, modification etc... using node js, express and mongo db",
             imgUrl: projImgGrimoire,
         }
-    ];
-    const fullProject = [
-
     ];
 
     return (
@@ -83,9 +80,6 @@ export const Projects = () => {
                                 <Nav.Item>
                                     <Nav.Link eventKey="second">BACKEND</Nav.Link>
                                 </Nav.Item>
-                                <Nav.Item>
-                                    <Nav.Link eventKey="third" >FULLSTACK</Nav.Link>
-                                </Nav.Item>
                             </Nav>
                             <Tab.Content>
                                 <Tab.Pane eventKey='first' >
@@ -106,20 +100,6 @@ export const Projects = () => {
                                 <Row>
                                         {
                                             backProject.map((project,index) => {
-                                                return (
-                                                <ProjectCard
-                                                 key={index}
-                                                {...project}
-                                                />
-                                            )
-                                            })
-                                        }
-                                    </Row>
-                                </Tab.Pane>
-                                <Tab.Pane eventKey='third'>
-                                <Row>
-                                        {
-                                            fullProject.map((project,index) => {
                                                 return (
                                                 <ProjectCard
                                                  key={index}

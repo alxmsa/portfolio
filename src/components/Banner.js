@@ -12,6 +12,9 @@ export const Banner = () => {
     const [text, setText] = useState('');
     const [delta, setDelta] = useState(300 - Math.random() * 100 );
     const period = 2000;
+    const handleOpenCV = () => {
+        window.open('/moussa_diop_cv.pdf', '_blank');
+      };
 
     useEffect(() => {
         let ticker = setInterval(() => {
@@ -57,7 +60,7 @@ export const Banner = () => {
                                     <span className="tagline">Welcome to my Portfolio</span>
                                     <h1> {`Hello I'm Moussa `}<span className="wrap">{text}</span></h1>
                                     <p>Junior in development and good quality producer.</p>
-                                    <button onClick={()=> console.log('connect')}>Download Resume<ArrowRightCircle size={25}/></button>
+                                    <button onClick={handleOpenCV}>Download Resume<ArrowRightCircle size={25}/></button>
                                 </div>}
                         </TrackVisibility>
                     </Col>

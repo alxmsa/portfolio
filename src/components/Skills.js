@@ -9,6 +9,8 @@ import reactjs from "../assets/img/reactjs_logo.webp";
 import nodejs from "../assets/img/nodejs_logo.webp";
 import mongodb from "../assets/img/mongodb_logo.webp";
 import colorSharp from "../assets/img/color-sharp.webp";
+import colorSharp2 from "../assets/img/color-sharp2.webp";
+import php from "../assets/img/php.svg"
 
 export const Skills = () => {
     const responsive = {
@@ -44,6 +46,26 @@ export const Skills = () => {
                         </p>
                         <Carousel responsive={responsive} infinite={true} className="skill-slider">
                             <div className="item">
+                                <img src={reactjs} alt="react js"/>
+                                <h5>REACT JS</h5>
+                            </div>
+                            <div className="item">
+                                <img src={nodejs} alt="node js"/>
+                                <h5>NODE JS</h5>
+                            </div>
+                            <div className="item">
+                                <img src={php} alt="php"/>
+                                <h5>PHP</h5>
+                            </div>
+                            <div className="item">
+                                <img src={mongodb} alt="mongodb"/>
+                                <h5>MONGO DB</h5>
+                            </div>
+                            <div className="item">
+                                <img src={apirest} alt="api rest"/>
+                                <h5>API REST</h5>
+                            </div>
+                            <div className="item">
                                 <img src={html} alt="html"/>
                                 <h5>HTML</h5>
                             </div>
@@ -54,22 +76,6 @@ export const Skills = () => {
                             <div className="item">
                                 <img src={javascript} alt="javascript"/>
                                 <h5>JAVASCRIPT</h5>
-                            </div>
-                            <div className="item">
-                                <img src={apirest} alt="api rest"/>
-                                <h5>API REST</h5>
-                            </div>
-                            <div className="item">
-                                <img src={reactjs} alt="React JS"/>
-                                <h5>REACT JS</h5>
-                            </div>
-                            <div className="item">
-                                <img src={nodejs} alt="Node JS"/>
-                                <h5>NODE JS</h5>
-                            </div>
-                            <div className="item">
-                                <img src={mongodb} alt="MongoDb"/>
-                                <h5>MONGODB</h5>
                             </div>
                             
                         </Carousel>
