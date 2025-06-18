@@ -8,10 +8,10 @@ import TrackVisibility from "react-on-screen";
 export const Banner = () => {
     const [loopNum, setLoopNum] = useState(0);
     const [isDeleting, setIsDeleting] = useState(false);
-    const toRotate = [ "Frontend Developer", "Backend Developer", "Freelancer"];
+    const toRotate = [ "Backend Developer"];
     const [text, setText] = useState('');
-    const [delta, setDelta] = useState(300 - Math.random() * 100 );
-    const period = 2000;
+    const [delta, setDelta] = useState((300 - Math.random() * 100 ) / 2);
+    const period = 1000;
     const handleOpenCV = () => {
         window.open('/moussa_diop_cv.pdf', '_blank');
       };
@@ -32,7 +32,7 @@ export const Banner = () => {
         setText(updatedText);
 
         if (isDeleting) {
-            setDelta(prevDelta => prevDelta / 2);
+            setDelta(prevDelta => prevDelta / 1.5);
           }
       
           if (!isDeleting && updatedText === fullText) {
@@ -54,7 +54,7 @@ export const Banner = () => {
             <Container>
                 <Row className='align-items-center'>
                     <Col xs={12} md={6} xl={7}>
-                        <TrackVisibility>
+                        <TrackVisibility once>
                             {({ isVisible })  => 
                                 <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
                                     <span className="tagline">Welcome to my Portfolio</span>
