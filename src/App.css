@@ -310,15 +310,23 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .logo_supp {
   position: relative;
 }
+.logo_static_navbar {
+  top: -30px !important;
+  height: 60px !important;
+  left: 4px;
+}
+.logo_rotate_navbar {
+  top: -36px !important;
+}
 .logo_static {
-  height: 75px !important;
-    left: 4px;
-    top: -35px !important;
+  height: 60px !important;
+  left: 4px;
+  top: -49px !important;
 }
 .logo_supp img {
   position: absolute;
-  top: -41px;
-  height: 85px;
+  top: -56px;
+  height: 70px;
   width: auto;
 }
 @keyframes rotateAnimation {
@@ -330,7 +338,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   }
 }
 
-.logo_turn {
+.logo_rotate {
   animation: rotateAnimation 10s linear infinite;
 }
 /* .logo_turn {
@@ -744,6 +752,9 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   }
   .qualification-bx {
     padding: 0 1rem;
+  }
+  .qualification__line__last {
+    height: 80%;
   }
 }
 @media screen and (max-width: 767px) {

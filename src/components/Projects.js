@@ -57,6 +57,8 @@ export const Projects = () => {
             title: "Mon vieux grimoire",
             description: "I have to develop an Api to create features like the authentification, the creation of a new book, modification etc... using node js, express and mongo db",
             imgUrl: projImgGrimoire,
+            path: "mon_vieux_grimoire",
+            backend: true,
         }
     ];
 

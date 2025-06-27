@@ -11,7 +11,7 @@ export const Qualifications = () => {
                         <div className="qualification__content">
                             <div className="qualification__data">
                                 <div className="qualification__end">
-                                    <h3 className="qualification__title">Développeur Web</h3>
+                                    <h3 className="qualification__title">Développeur Informatique</h3>
                                     <span className="qualification__subtitle">Openclassrooms</span>
                                     <div className="qualification__calendar">
                                         Mai 2024 - Avril 2025
@@ -61,7 +61,7 @@ export const Qualifications = () => {
                                 <div></div>
                                 <div>
                                     <span className="qualification__rounder"></span>
-                                    <span className="qualification__line"></span>
+                                    <span className="qualification__line qualification__line__last"></span>
                                 </div>
                                 <div>
                                     <h3 className="qualification__title">Baccalauréat STMG</h3>

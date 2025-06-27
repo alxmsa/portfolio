@@ -12,7 +12,7 @@ export const Footer = () => {
                 <Row className="align-item-center">
                     <Col sm={6}>
                     <div className="logo_supp logo_footer">
-                        <img src={logo2} alt="Logo" className="logo_turn"/>
+                        <img src={logo2} alt="Logo" className="logo_rotate"/>
                         <img src={logo} alt="Logo" className="logo_static"/>
                     </div>
                     </Col>

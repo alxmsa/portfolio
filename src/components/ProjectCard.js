@@ -1,8 +1,10 @@
 import { Col } from 'react-bootstrap';
 
-export const ProjectCard = ({title, description, imgUrl, path}) => {
-    const filePath = `https://alxmsa.github.io/${path}`;
-    console.log("Lien du projet :", filePath); // 🔍 Vérifie le chemin généré
+export const ProjectCard = ({title, description, imgUrl, path, backend}) => {
+    const isBackend = backend;
+
+    const filePath = isBackend ? `https://github.com/alxmsa/${path}` : `https://alxmsa.github.io/${path}`;
+    /* console.log("Lien du projet :", filePath); // 🔍 Vérifie le chemin généré */
 
     return (
         <Col sm={6} md={4}>
