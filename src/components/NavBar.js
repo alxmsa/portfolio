@@ -58,7 +58,7 @@ export const NavBar = () => {
               <Nav.Link href="#projects" className={activeLink === 'projects' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('projects')}>Projects</Nav.Link>
             </Nav>
             <span className="navbar-text">
-              <div className="social-icon">
+              <div className="social-icon-navbar">
                 <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/moussa-diop-7b2099167/"><img src={navIcon1} alt="linkedin" /></a>
                 <a target="_blank" rel="noreferrer" href="https://github.com/alxmsa"><img src={navIcon2} alt="facebook" /></a>
                 <a target="_blank" rel="noreferrer" href="https://www.instagram.com/mssa.dp/"><img src={navIcon3} alt="instagram" /></a>

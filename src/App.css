@@ -114,11 +114,11 @@ span.navbar-text {
     display: flex;
     align-items: center;
 }
-.social-icon {
+.social-icon, .social-icon-navbar {
     display: inline-block;
     margin-left: 14px;
 }
-.social-icon a {
+.social-icon a, .social-icon-navbar a {
     width: 42px;
     height: 42px;
     background: rgba(217, 217, 217, 0.1);
@@ -131,7 +131,7 @@ span.navbar-text {
     line-height: 1;
     border: 1px solid rgba(255, 255, 255, 0.5);
 }
-.social-icon a::before {
+.social-icon a::before, .social-icon-navbar a::before {
     content: "";
     width: 42px;
     height: 42px;
@@ -141,15 +141,15 @@ span.navbar-text {
     transform: scale(0);
 	transition: 0.3s ease-in-out;
 }
-.social-icon a:hover::before {
+.social-icon a:hover::before, .social-icon-navbar a:hover::before {
     transform: scale(1);
 }
-.social-icon a img {
+.social-icon a img, .social-icon-navbar a img {
 	width: 40%;
 	z-index: 1;
 	transition: 0.3s ease-in-out;
 }
-.social-icon a:hover img {
+.social-icon a:hover img, .social-icon-navbar a:hover img {
 	filter: brightness(0) saturate(100%) invert(0%) sepia(7%) saturate(98%) hue-rotate(346deg) brightness(95%) contrast(86%);
 }
 .navbar-text button {
@@ -740,13 +740,14 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 
 /* Update Phone Bug */
-/* @media screen and (max-width: 475px){
-  .social-icon {
+@media screen and (max-width: 419px) {
+  .social-icon-navbar {
+    margin: 0;
+    padding: 0 10px;
     display: flex;
     flex-direction: column;
-  }
+  }  
 }
- */
 @media screen and (max-width: 475px){
   .nav-item a {
     font-size: .7rem !important;
@@ -761,34 +762,22 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
     padding: 0 1rem;
   }
   .qualification__line__last {
-    height: 80%;
+    height: 60%;
   }
 }
 @media screen and (max-width: 767px) {
- /*  .navbar-nav {
-    margin-top: 30px;
-  } */
   #basic-navbar-nav {
     margin: 25px 0 !important;
-    padding: 0px 0;
+    padding: 10px 0 5px;
     width: 100%;
     background: linear-gradient(90.21deg, rgba(170, 54, 124, 0.5) -5.91%, rgba(74, 47, 189, 0.5) 111.58%) !important;
     z-index: 9999;
     transition:  0.32s ease-in-out;
     border-radius: 20px;
   }
-  .social-icon {
-    margin: 0;
-    padding: 0 10px;
-    display: flex;
-    flex-direction: column;
-  }
   nav.navbar .navbar-nav .nav-link.navbar-link {
     padding: 0 10px 17px 10px;
   }
-/*   .navbar-nav  {
-    margin-top: 0;
-  } */
   .logo_supp {
     margin-top: 20px;
   }
